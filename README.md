@@ -123,7 +123,9 @@ Used to verify if GlyphManager has successfully connected to the Service.
 | void  | onServiceDisconnected(ComponentName componentName) <br> Mainly used to inform GlyphService about a failed connection or disconnection.  |
 
 ## Example 1
-`public class MainActivity extends AppCompatActivity {
+
+```
+public class MainActivity extends AppCompatActivity {
     private GlyphManager mGM = null;
     private GlyphManager.Callback mCallback = null;
     
@@ -192,13 +194,15 @@ Used to verify if GlyphManager has successfully connected to the Service.
             }
         });
     }
-}`
-
+}
+```
 ## Example 2
 We are trying to turn on B1 and C1_4, then A2 and C1_2. When toggling frame2, frame1 will be toggled off.
-`GlyphFrame.Builder builder = mGM.getGlyphFrameBuilder();
+```
+GlyphFrame.Builder builder = mGM.getGlyphFrameBuilder();
 GlyphFrame frame1 = builder.buildChannel(Glyph.B1).buildChannel(Glyph.C1_4).build();
 mGM.toggle(frame1);
 GlyphFrame frame2 = builder.buildChannel(Glyph.A2).buildChannel(Glyph.C1_2).build();
-mGM.toggle(frame2);`
+mGM.toggle(frame2);
+```
 
