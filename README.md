@@ -1,9 +1,9 @@
 # Setup Development Environment 
 ## Normal Process
-Before starting development, you need to set up the API Key. Please define the API Key provided by Nothing in the AndroidManifest.xml file of your application, within the <application> tag. You can do it in the following way:
+Before starting development, you need to set up the API Key. Please define the API Key provided by Nothing in the AndroidManifest.xml file of your application, within the <application> tag. You can do it in the following way: <br>
 `<meta-data android:name="NothingKey" android:value="{API Key}"/>`
 ## Debug Process
-No need to set up the true API Key. You just need to setup a test key in your AndroidManifest.xml
+No need to set up the true API Key. You just need to setup a test key in your AndroidManifest.xml <br>
 `<meta-data android:name="NothingKey" android:value="test"/>`
 
 # Setup Instructions
@@ -24,11 +24,15 @@ No need to set up the true API Key. You just need to setup a test key in your An
 ## PackageName: com.nothing.ketchum
 ### AndroidManifest.xml
 Add two segments to AndroidManifest.xml
-1. Enable the permission: com.nothing.ketchum.permission.ENABLE
-`<uses-permission android:name="com.nothing.ketchum.permission.ENABLE"/>`
-2. Add API Key
-`<!-- This tag should be added in application tag -->`
-`<meta-data android:name="NothingKey" android:value="{Your APIKey}" />`
+1. Enable the permission: com.nothing.ketchum.permission.ENABLE <br>
+```
+<uses-permission android:name="com.nothing.ketchum.permission.ENABLE"/>
+```
+2. Add API Key <br>
+```
+<!-- This tag should be added in application tag -->
+<meta-data android:name="NothingKey" android:value="{Your APIKey}" />
+```
 ## Common
 Help to identify Nothing phone models.
 
