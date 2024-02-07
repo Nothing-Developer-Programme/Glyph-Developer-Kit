@@ -68,6 +68,8 @@ How the Glyph Interface is indexed
 | int  | D1_1 - D1_8 <br> Where D1_1 is the bottom and D1_8 is the top  | ```7 - 14```  |
 | int  | E1  | ```6``` |
 
+![圖片描述](assets/Frame5-transparent.png)
+
 ### Nothing Phone (2)
 | Constants  |   | ArrayIndex  |
 | ------------ | ------------ | ------------ |
@@ -78,6 +80,8 @@ How the Glyph Interface is indexed
 | int  | C2 - C6  | ```19 - 23``` |
 | int  | D1_1 - D1_8 <br> Where D1_1 is the bottom and D1_8 is the top   |  ```25 - 32```   |
 | int   |  E1   |  ```24```   |
+
+![圖片描述](assets/Frame5-transparent.png)
 
 ## GlyphFrame
 To indicate the Glyph to be used.
