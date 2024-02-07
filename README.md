@@ -81,7 +81,7 @@ How the Glyph Interface is indexed
 | int  | D1_1 - D1_8 <br> Where D1_1 is the bottom and D1_8 is the top   |  ```25 - 32```   |
 | int   |  E1   |  ```24```   |
 
-![圖片描述](assets/Frame5-transparent.png)
+![圖片描述](assets/Frame6-transparent.png)
 
 ## GlyphFrame
 To indicate the Glyph to be used.
