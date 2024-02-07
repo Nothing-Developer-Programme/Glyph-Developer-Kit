@@ -68,7 +68,9 @@ How the Glyph Interface is indexed
 | int  | D1_1 - D1_8 <br> Where D1_1 is the bottom and D1_8 is the top  | ```7 - 14```  |
 | int  | E1  | ```6``` |
 
-![圖片描述](assets/Frame5-transparent.png)
+
+![img_v3_027r_aed999af-858f-47c0-8f92-dc3c837ba1ah](https://github.com/Nothing-Developer-Programme/Glyph-Developer-Kit/assets/56658376/16eb0b53-ce08-4275-97c4-26c82f18299f)
+
 
 ### Nothing Phone (2)
 | Constants  |   | ArrayIndex  |
@@ -81,7 +83,9 @@ How the Glyph Interface is indexed
 | int  | D1_1 - D1_8 <br> Where D1_1 is the bottom and D1_8 is the top   |  ```25 - 32```   |
 | int   |  E1   |  ```24```   |
 
-![圖片描述](assets/Frame6-transparent.png)
+
+![img_v3_027r_a4ecc24c-68b7-454d-b78c-67b3bdc966fh](https://github.com/Nothing-Developer-Programme/Glyph-Developer-Kit/assets/56658376/f576177c-9e15-4628-bf78-906509bb3673)
+
 
 ## GlyphFrame
 To indicate the Glyph to be used.
