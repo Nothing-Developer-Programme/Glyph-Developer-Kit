@@ -95,7 +95,7 @@ How the Glyph Interface is indexed
 | int | B  |  ```24```  |
 | int | C1 - C24 <br> Where C_1 is bottom left and C_24 is top right of C |  ```0 - 23```  |
 
-![img](assets/Frame7-transparent.jpg){width=70% height=70%}
+![img](assets/Frame7-transparent.jpg)
 
 ## GlyphFrame
 To indicate the Glyph to be used.
