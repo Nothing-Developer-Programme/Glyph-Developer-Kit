@@ -95,8 +95,7 @@ How the Glyph Interface is indexed
 | int | B  |  ```24```  |
 | int | C1 - C24 <br> Where C_1 is bottom left and C_24 is top right of C |  ```0 - 23```  |
 
-![Frame7-transparent](https://github.com/Nothing-Developer-Programme/Glyph-Developer-Kit/assets/158436130/1db8f715-82c6-4a33-9791-a5299da23d60)
-
+![Frame7-transparent](https://github.com/Nothing-Developer-Programme/Glyph-Developer-Kit/assets/158436130/2eebbb97-4d6f-496c-bdbb-ecda9bb70e97)
 
 ## GlyphFrame
 To indicate the Glyph to be used.
