@@ -52,11 +52,13 @@ Help to distinguish between smartphone model.
 | ------------ | ------------ |
 | String  | ```DEVICE_20111```  |
 | String  | ```DEVICE_22111```  |
+| String  | ```DEVICE_23111```  |
 
 | Methods   | |
 | ------------ | ------------ |
 | boolean  | ```is20111()``` <br> Whether model is Phone (1) |
 | boolean  | ```is22111()``` <br> Whether model is Phone (2) |
+| boolean  | ```is23111()``` <br> Whether model is Phone (2a) |
 ## Glyph
 How the Glyph Interface is indexed
 ### Nothing Phone (1)
@@ -86,6 +88,14 @@ How the Glyph Interface is indexed
 
 ![img_v3_027r_a4ecc24c-68b7-454d-b78c-67b3bdc966fh](https://github.com/Nothing-Developer-Programme/Glyph-Developer-Kit/assets/56658376/f576177c-9e15-4628-bf78-906509bb3673)
 
+### Nothing Phone (2a)
+| Constants  |   | ArrayIndex  |
+| ------------ | ------------ | ------------ |
+| int | A  |  ```25```  |
+| int | B  |  ```24```  |
+| int | C1 - C24 <br> Where C_1 is bottom left and C_24 is top right of C |  ```0 - 23```  |
+
+![img](assets/Frame7-transparent.jpg)
 
 ## GlyphFrame
 To indicate the Glyph to be used.
@@ -134,7 +144,9 @@ Used to control the Glyph Interface.
 |void   | ```animate(GlyphFrame frame)``` <br> Used for animating a breathing animation using the parameters of channels, period, and interval set in the GlyphFrame.  |
 | void  | ```displayProgress(GlyphFrame frame, int progress)``` <br> Used to display a progress value on C1 / D1. <br> Limited to D1 only for Phone (1).  | |
 | void   | ```displayProgress(GlyphFrame frame, int progress, bool reverse)``` <br> Used to display the progress value on C1 / D1. <br> Limited to D1 only for Phone (1).  ||
-| void   | ```displayProgressAndToggle(GlyphFrame frame, int progress, boolean isReverse)``` <br>Used to simultaneously toggle all Glyphs except C1 / D1 and display the progress value on C1 / D1. Limited to D1 only for Phone (1).  |
+| void   | ```displayProgressAndToggle(GlyphFrame frame, int progress, boolean isReverse)``` <br>Used to simultaneously toggle all Glyphs except C1 / D1 and display the progress value on C1 / D1. Limited to D1 only for Phone (1).  | 
+| void  | ```turnOff()``` <br> Used to turn off any showing glyph. |
+
 
 ## GlyphManager.Callback
 Used to verify if GlyphManager has successfully connected to the Service.
@@ -176,6 +188,7 @@ public class MainActivity extends AppCompatActivity {
             public void onServiceConnected(ComponentName componentName) {
                 if (Common.is20111()) mGM.register(Common.DEVICE_20111);
                 if (Common.is22111()) mGM.register(Common.DEVICE_22111);
+                if (Common.is23111()) mGM.register(Common.DEVICE_23111);
                 try {
                     mGM.openSession();
                 } catch(GlyphException e) {
@@ -213,6 +226,12 @@ public class MainActivity extends AppCompatActivity {
                 GlyphFrame.Builder builder = mGM.getGlyphFrameBuilder();
                 GlyphFrame frame = builder.buildChannelC().build();
                 mGM.animate(frame);
+            }
+        });
+        channelDBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mGM.turnOff();
             }
         });
     }
