@@ -251,4 +251,8 @@ GlyphFrame frame2 = builder.buildChannel(Glyph.A2).buildChannel(Glyph.C1_2).buil
 mGM.toggle(frame2);
 ```
 
-
+## Engines, Programming Frameworks & Languages
+#### Game Engines:
+- [NothingOS.Unity](https://github.com/am1goo/NothingOS.Unity) - this SDK for Unity Engine provides native APIs for all of the essential Glyph features on Nothing Phone.
+#### Frameworks
+- [Nothing Glyph Interface for Flutter](https://pub.dev/packages/nothing_glyph_interface) - Flutter implementation of the Glyph Developer Kit from Nothing.
