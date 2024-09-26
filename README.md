@@ -58,7 +58,7 @@ Help to distinguish between smartphone model.
 | ------------ | ------------ |
 | boolean  | ```is20111()``` <br> Whether model is Phone (1) |
 | boolean  | ```is22111()``` <br> Whether model is Phone (2) |
-| boolean  | ```is23111()``` <br> Whether model is Phone (2a) |
+| boolean  | ```is23111()``` <br> Whether model are Phone (2a) and Phone (2a) Plus |
 ## Glyph
 How the Glyph Interface is indexed
 ### Nothing Phone (1)
