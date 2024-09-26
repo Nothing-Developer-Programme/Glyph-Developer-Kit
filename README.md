@@ -88,7 +88,7 @@ How the Glyph Interface is indexed
 
 ![img_v3_027r_a4ecc24c-68b7-454d-b78c-67b3bdc966fh](https://github.com/Nothing-Developer-Programme/Glyph-Developer-Kit/assets/56658376/f576177c-9e15-4628-bf78-906509bb3673)
 
-### Nothing Phone (2a)
+### Nothing Phone (2a) and Phone (2a) Plus
 | Constants  |   | ArrayIndex  |
 | ------------ | ------------ | ------------ |
 | int | A  |  ```25```  |
