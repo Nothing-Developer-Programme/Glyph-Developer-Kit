@@ -53,12 +53,14 @@ Help to distinguish between smartphone model.
 | String  | ```DEVICE_20111```  |
 | String  | ```DEVICE_22111```  |
 | String  | ```DEVICE_23111```  |
+| String  | ```DEVICE_23113```  |
 
 | Methods   | |
 | ------------ | ------------ |
-| boolean  | ```is20111()``` <br> Whether model is Phone (1) |
-| boolean  | ```is22111()``` <br> Whether model is Phone (2) |
-| boolean  | ```is23111()``` <br> Whether model are Phone (2a) and Phone (2a) Plus |
+| boolean  | ```is20111()``` <br> Whether model is Phone (1)       |
+| boolean  | ```is22111()``` <br> Whether model is Phone (2)       |
+| boolean  | ```is23111()``` <br> Whether model is Phone (2a)      |
+| boolean  | ```is23113()``` <br> Whether model is Phone (2a) Plus |
 ## Glyph
 How the Glyph Interface is indexed
 ### Nothing Phone (1)
@@ -191,6 +193,7 @@ public class MainActivity extends AppCompatActivity {
                 if (Common.is20111()) mGM.register(Common.DEVICE_20111);
                 if (Common.is22111()) mGM.register(Common.DEVICE_22111);
                 if (Common.is23111()) mGM.register(Common.DEVICE_23111);
+                if (Common.is23113()) mGM.register(Common.DEVICE_23113);
                 try {
                     mGM.openSession();
                 } catch(GlyphException e) {
