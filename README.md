@@ -54,6 +54,7 @@ Help to distinguish between smartphone model.
 | String  | ```DEVICE_22111```  |
 | String  | ```DEVICE_23111```  |
 | String  | ```DEVICE_23113```  |
+| String  | ```DEVICE_24111```  |
 
 | Methods   | |
 | ------------ | ------------ |
@@ -61,6 +62,7 @@ Help to distinguish between smartphone model.
 | boolean  | ```is22111()``` <br> Whether model is Phone (2)       |
 | boolean  | ```is23111()``` <br> Whether model is Phone (2a)      |
 | boolean  | ```is23113()``` <br> Whether model is Phone (2a) Plus |
+| boolean  | ```is24111()``` <br> Whether model is Phone (3a) Plus and Phone (3a) Plus |
 ## Glyph
 How the Glyph Interface is indexed
 ### Nothing Phone (1)
@@ -98,6 +100,22 @@ How the Glyph Interface is indexed
 | int | C1 - C24 <br> Where C_1 is bottom left and C_24 is top right of C |  ```0 - 23```  |
 
 ![Frame 7](https://github.com/Nothing-Developer-Programme/Glyph-Developer-Kit/assets/56658376/8720123a-e88e-4958-96f3-2582b0dee590)
+
+### Nothing Phone (3a) and Phone (3a) Plus
+| Constants  |   | ArrayIndex  |
+| ------------ | ------------ | ------------ |
+| int | A1 - A20 <br> Where A_1 is bottom left and A_20 is top right of A |  ```0 - 19```  |
+| int | B1 - B11 <br> Where B_1 is top and B_11 is bottom of B |  ```20 - 30```  |
+| int | C1 - C5 <br> Where C_1 is bottom right and C_5 is top left of C |  ```31 - 35```  |
+
+![image](https://github.com/user-attachments/assets/44d409c1-0ddc-4984-88ff-7d084cf6277e)
+
+
+
+
+
+
+
 
 
 
