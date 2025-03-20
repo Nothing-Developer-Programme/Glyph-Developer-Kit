@@ -213,6 +213,7 @@ public class MainActivity extends AppCompatActivity {
                 if (Common.is22111()) mGM.register(Common.DEVICE_22111);
                 if (Common.is23111()) mGM.register(Common.DEVICE_23111);
                 if (Common.is23113()) mGM.register(Common.DEVICE_23113);
+                if (Common.is24111()) mGM.register(Common.DEVICE_24111);
                 try {
                     mGM.openSession();
                 } catch(GlyphException e) {
