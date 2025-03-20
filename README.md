@@ -104,11 +104,12 @@ How the Glyph Interface is indexed
 ### Nothing Phone (3a) and Phone (3a) Pro
 | Constants  |   | ArrayIndex  |
 | ------------ | ------------ | ------------ |
-| int | A1 - A20 <br> Where A_1 is bottom left and A_20 is top right of A |  ```0 - 19```  |
-| int | B1 - B11 <br> Where B_1 is top and B_11 is bottom of B |  ```20 - 30```  |
-| int | C1 - C5 <br> Where C_1 is bottom right and C_5 is top left of C |  ```31 - 35```  |
+| int | A1 - A11 <br> Where A_1 is top and A_11 is bottom of A |  ```20 - 30```  |
+| int | B1 - B5 <br> Where B_1 is bottom right and B_5 is top left of B |  ```31 - 35```  |
+| int | C1 - C20 <br> Where C_1 is bottom left and C_20 is top right of C |  ```0 - 19```  |
 
-![image](https://github.com/user-attachments/assets/44d409c1-0ddc-4984-88ff-7d084cf6277e)
+![image](https://github.com/user-attachments/assets/8bd3950a-8c12-4df3-bfb4-8a5d94c1b047)
+
 
 
 
