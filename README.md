@@ -48,6 +48,16 @@ Add two segments to AndroidManifest.xml
 ## Common
 Help to distinguish between smartphone model.
 
+| Methods   | |
+| ------------ | ------------ |
+| boolean  | ```is20111()``` <br> Whether model is Phone (1)       |
+| boolean  | ```is22111()``` <br> Whether model is Phone (2)       |
+| boolean  | ```is23111()``` <br> Whether model is Phone (2a)      |
+| boolean  | ```is23113()``` <br> Whether model is Phone (2a) Plus |
+| boolean  | ```is24111()``` <br> Whether model is Phone (3a) and Phone (3a) Pro |
+## Glyph
+How the Glyph Interface is indexed
+
 | Constants  | |
 | ------------ | ------------ |
 | String  | ```DEVICE_20111```  |
@@ -56,15 +66,6 @@ Help to distinguish between smartphone model.
 | String  | ```DEVICE_23113```  |
 | String  | ```DEVICE_24111```  |
 
-| Methods   | |
-| ------------ | ------------ |
-| boolean  | ```is20111()``` <br> Whether model is Phone (1)       |
-| boolean  | ```is22111()``` <br> Whether model is Phone (2)       |
-| boolean  | ```is23111()``` <br> Whether model is Phone (2a)      |
-| boolean  | ```is23113()``` <br> Whether model is Phone (2a) Plus |
-| boolean  | ```is24111()``` <br> Whether model is Phone (3a) Pro and Phone (3a) Pro |
-## Glyph
-How the Glyph Interface is indexed
 ### Nothing Phone (1)
 | Constants  |   | ArrayIndex  |
 | ------------ | ------------ | ------------ |
@@ -209,11 +210,11 @@ public class MainActivity extends AppCompatActivity {
         mCallback = new GlyphManager.Callback() {
             @Override
             public void onServiceConnected(ComponentName componentName) {
-                if (Common.is20111()) mGM.register(Common.DEVICE_20111);
-                if (Common.is22111()) mGM.register(Common.DEVICE_22111);
-                if (Common.is23111()) mGM.register(Common.DEVICE_23111);
-                if (Common.is23113()) mGM.register(Common.DEVICE_23113);
-                if (Common.is24111()) mGM.register(Common.DEVICE_24111);
+                if (Common.is20111()) mGM.register(Glyph.DEVICE_20111);
+                if (Common.is22111()) mGM.register(Glyph.DEVICE_22111);
+                if (Common.is23111()) mGM.register(Glyph.DEVICE_23111);
+                if (Common.is23113()) mGM.register(Glyph.DEVICE_23113);
+                if (Common.is24111()) mGM.register(Glyph.DEVICE_24111);
                 try {
                     mGM.openSession();
                 } catch(GlyphException e) {
