@@ -8,6 +8,10 @@ Before starting development, you need to set up the API Key. Define the API Key 
 ```
 Be sure to replace {API Key} with the actual API key that has been provided to you.
 
+Note: The API key restriction has been removed starting from Android B (Android 16). You no longer need to apply for an API key from Nothing if your application is targeting this version or later.
+
+Important: It is still highly recommended to keep the NothingKey meta-data in your AndroidManifest.xml to avoid potential stability issues or compatibility conflicts across different system versions.
+
 ## Debug Process
 If you are in the debug phase, there is no need to set up the true API Key. Instead, use a test key in your AndroidManifest.xml like this:
 ```xml
@@ -274,5 +278,6 @@ mGM.toggle(frame1);
 GlyphFrame frame2 = builder.buildChannel(Glyph.A2).buildChannel(Glyph.C1_2).build();
 mGM.toggle(frame2);
 ```
+
 
 
