@@ -29,6 +29,7 @@ adb shell settings put global nt_glyph_interface_debug_enable 1
 3. Once successfully activated, you will receive a notification.
 
 ## SDK Integration
+Glyph SDK and GlyphMatrix SDK are the same. Simply use the single AAR for integration.
 1. There are several key points to note when integrating the Glyph SDK:
    - Glyph SDK primarily operates Glyph through a system proxy service. Please ensure that GlyphManager's init is called at the beginning.
    -  The SDK needs to be registered before it can be used. Call the ```register()``` function to grant permission for SDK usage.
@@ -59,6 +60,7 @@ Help to distinguish between smartphone model.
 | boolean  | ```is23111()``` <br> Whether model is Phone (2a)      |
 | boolean  | ```is23113()``` <br> Whether model is Phone (2a) Plus |
 | boolean  | ```is24111()``` <br> Whether model is Phone (3a) and Phone (3a) Pro |
+| boolean  | ```is25111()``` <br> Whether model is Phone (4a) |
 ## Glyph
 How the Glyph Interface is indexed
 
@@ -69,6 +71,7 @@ How the Glyph Interface is indexed
 | String  | ```DEVICE_23111```  |
 | String  | ```DEVICE_23113```  |
 | String  | ```DEVICE_24111```  |
+| String  | ```DEVICE_25111```  |
 
 ### Nothing Phone (1)
 | Constants  |   | ArrayIndex  |
@@ -116,13 +119,12 @@ How the Glyph Interface is indexed
 ![image](https://github.com/user-attachments/assets/8bd3950a-8c12-4df3-bfb4-8a5d94c1b047)
 
 
+### Nothing Phone (4a)
+| Constants  |   | ArrayIndex  |
+| ------------ | ------------ | ------------ |
+| int  | A1 - A6 <br> Where A_1 is top and A_6 is bottom of A | ```0 - 5``` |
 
-
-
-
-
-
-
+<img src="assets/Frame8-transparent.png" width="510">
 
 
 ## GlyphFrame
