@@ -61,6 +61,7 @@ Help to distinguish between smartphone model.
 | boolean  | ```is23113()``` <br> Whether model is Phone (2a) Plus |
 | boolean  | ```is24111()``` <br> Whether model is Phone (3a) and Phone (3a) Pro |
 | boolean  | ```is25111()``` <br> Whether model is Phone (4a) |
+| boolean  | ```is25131()``` <br> Whether model is Phone (4b) |
 ## Glyph
 How the Glyph Interface is indexed
 
@@ -72,6 +73,7 @@ How the Glyph Interface is indexed
 | String  | ```DEVICE_23113```  |
 | String  | ```DEVICE_24111```  |
 | String  | ```DEVICE_25111```  |
+| String  | ```DEVICE_25131```  |
 
 ### Nothing Phone (1)
 | Constants  |   | ArrayIndex  |
@@ -125,6 +127,13 @@ How the Glyph Interface is indexed
 | int  | A1 - A6 <br> Where A_1 is top and A_6 is bottom of A | ```0 - 5``` |
 
 <img src="assets/Frame8-transparent.png" width="510">
+
+### Nothing Phone (4b)
+| Constants  |   | ArrayIndex  |
+| ------------ | ------------ | ------------ |
+| int  | A1 - A4 <br> Where A_1 is top and A_4 is bottom of A | ```0 - 3``` |
+
+<img src="assets/Frame9-transparent.png" width="510">
 
 
 ## GlyphFrame
@@ -221,6 +230,8 @@ public class MainActivity extends AppCompatActivity {
                 if (Common.is23111()) mGM.register(Glyph.DEVICE_23111);
                 if (Common.is23113()) mGM.register(Glyph.DEVICE_23113);
                 if (Common.is24111()) mGM.register(Glyph.DEVICE_24111);
+                if (Common.is25111()) mGM.register(Glyph.DEVICE_25111);
+                if (Common.is25131()) mGM.register(Glyph.DEVICE_25131);
                 try {
                     mGM.openSession();
                 } catch(GlyphException e) {
